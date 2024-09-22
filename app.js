@@ -11,7 +11,7 @@ const cors = require('cors')
 
 var app = express();
 app.use(cors())
-// view engine setupapp.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use((err, req, res, next) => {
   console.error(err.stack); // Logs error stack trace
